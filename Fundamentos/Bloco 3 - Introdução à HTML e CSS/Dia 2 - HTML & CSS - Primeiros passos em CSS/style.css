@@ -1,0 +1,28 @@
+body {
+  font-size: 16px;
+}
+
+.font {
+  font-size: 65px;
+  color: orange;
+}
+
+.cor {
+  background-color: blue;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+p {
+  font-weight: 600;
+  font-size: 48px;
+  font-style: bold;
+}
+
+ul {
+  line-height: 50px;
+  text-decoration: line-through;
+  text-align: center;
+}
