@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, p, ol, ul {
+  text-align: center;
+}
+
+li:hover {
+  background-color: blueviolet;
+}
+
+li:active {
+  font-size: 20px;
+}
