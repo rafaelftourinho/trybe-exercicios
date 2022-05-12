@@ -176,6 +176,37 @@ if(custo >= 0 && valorDeVenda >= 0){
 
 //EXERCÌCIO 11
 
+let aliquotaINSS;
+let aliquotaIR;
+
+const crescimentoSalario = 2000.00;
+
+if (crescimentoSalario <= 1556.94) {
+  aliquotaINSS = crescimentoSalario * 0.08;
+} else if (crescimentoSalario <= 2594.92){
+  aliquotaINSS = crescimentoSalario * 0.09;
+} else if (crescimentoSalario <= 5189.82) {
+  aliquotaINSS = crescimentoSalario * 0.11;
+} else {
+  aliquotaINSS = 570.88;
+}
+
+const salarioBase = crescimentoSalario - aliquotaINSS;
+
+if (salarioBase <= 1903.98) {
+  aliquotaIR = 0;
+} else if (salarioBase <= 2826.65) {
+  aliquotaIR = (salarioBase * 0.075) - 142.80;
+} else if (salarioBase <= 3751.05){
+  aliquotaIR = (salarioBase * 0.15) - 354.80;
+} else if (salarioBase <= 4664.68) {
+  aliquotaIR = (salarioBase * 0.225) - 636.13;
+} else {
+  aliquotaIR = (salarioBase * 0.275) - 869.36;
+}
+
+console.log(`Salário: ${(salarioBase - aliquotaIR)}`);
+
 
 
 
