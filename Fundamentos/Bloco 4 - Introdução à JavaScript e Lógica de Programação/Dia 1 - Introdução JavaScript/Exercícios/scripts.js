@@ -179,36 +179,30 @@ if(custo >= 0 && valorDeVenda >= 0){
 let aliquotaINSS;
 let aliquotaIR;
 
-const crescimentoSalario = 2000.00;
+const salarioBruto = 3000.00;
 
-if (crescimentoSalario <= 1556.94) {
-  aliquotaINSS = crescimentoSalario * 0.08;
-} else if (crescimentoSalario <= 2594.92){
-  aliquotaINSS = crescimentoSalario * 0.09;
-} else if (crescimentoSalario <= 5189.82) {
-  aliquotaINSS = crescimentoSalario * 0.11;
+if (salarioBruto <= 1556.94) {
+  aliquotaINSS = salarioBruto * 0.08;
+} else if (salarioBruto <= 2594.92){
+  aliquotaINSS = salarioBruto * 0.09;
+} else if (salarioBruto <= 5189.82) {
+  aliquotaINSS = salarioBruto * 0.11;
 } else {
   aliquotaINSS = 570.88;
 }
 
-const salarioBase = crescimentoSalario - aliquotaINSS;
+const salarioLiquido = salarioBruto - aliquotaINSS;
 
-if (salarioBase <= 1903.98) {
+if (salarioLiquido <= 1903.98) {
   aliquotaIR = 0;
-} else if (salarioBase <= 2826.65) {
-  aliquotaIR = (salarioBase * 0.075) - 142.80;
-} else if (salarioBase <= 3751.05){
-  aliquotaIR = (salarioBase * 0.15) - 354.80;
-} else if (salarioBase <= 4664.68) {
-  aliquotaIR = (salarioBase * 0.225) - 636.13;
+} else if (salarioLiquido <= 2826.65) {
+    aliquotaIR = (salarioLiquido * 0.075) - 142.80;
+} else if (salarioLiquido <= 3751.05){
+    aliquotaIR = (salarioLiquido * 0.15) - 354.80;
+} else if (salarioLiquido <= 4664.68) {
+    aliquotaIR = (salarioLiquido * 0.225) - 636.13;
 } else {
-  aliquotaIR = (salarioBase * 0.275) - 869.36;
+    aliquotaIR = (salarioLiquido * 0.275) - 869.36;
 }
 
-console.log(`Salário: ${(salarioBase - aliquotaIR)}`);
-
-
-
-
-
-
+console.log(`Salário: ${(salarioLiquido - aliquotaIR)}`);
