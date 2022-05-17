@@ -195,3 +195,5 @@ console.log(verificaFimPalavra('trybe', 'be'));
 console.log(verificaFimPalavra('joaofernando', 'fernan'));
 
 
+//---------------BÔNUS---------------
+
