@@ -57,25 +57,39 @@
 
       const textoEmP = (text) =>  (document.getElementsByTagName('p')[0].innerText) = text;
 
-      const amareloParaVerde = () => (document.getElementsByClassName('main-content')[0].style.backgroundColor) = 'rgb(76,164,109)';
+      const amareloParaVerde = (backgroundColor) => (document.getElementsByClassName('main-content')[0].style.backgroundColor) = 'rgb(76,164,109)';
 
-      // const amareloPVerde = (background) => (document.getElementsByClassName('main-content')[0].style.backgroundColor);
+      // const amareloParaVerde = (backgroundColor) => (document.getElementsByClassName('main-content')[0].style.backgroundColor) = backgroundColor;
 
 
       const vermelhoParaBranco = (backgroundColor) => {
-        let mudaCor = document.getElementsByTagName('section')[0].style.backgroundColor = backgroundColor;
+      (document.getElementsByTagName('section')[0].style.backgroundColor) = backgroundColor;
       }
 
       const mudarTexto = (text) => {
         let trocaTexto = document.getElementsByTagName('h1')[0].innerText = text;
       }
 
-      const paraMaiusculo = () => {
-        let vamoMudar = document.getElementsByTagName('p');
-        for (let i in vamoMudar){
-          vamoMudar[i].innerHTML = vamoMudar[i].innerHTML.toUpperCase(); 
+      // const paraMaiusculo = () => {
+      //   let vamoMudar = document.getElementsByTagName('p');
+      //   for (let i in vamoMudar){
+      //     vamoMudar[i].innerHTML = vamoMudar[i].innerHTML.toUpperCase(); 
+      //   }
+      // }
+
+        // const paraMaiusculo = () => {
+        //   let vamoMudar = document.getElementsByTagName('p');
+        //   for (let i in vamoMudar){
+        //     vamoMudar[i].style.textTransform = 'uppercase';
+        //   }
+        // }
+
+        const paraMaiusculo = () => {
+          let vamoMudar = document.getElementsByTagName('p');
+          for (let index of vamoMudar){
+            index.style.textTransform = 'uppercase';
+          }
         }
-      }
 
       const tudoDasP = () => {
         let tudoP = document.getElementsByTagName('p');
