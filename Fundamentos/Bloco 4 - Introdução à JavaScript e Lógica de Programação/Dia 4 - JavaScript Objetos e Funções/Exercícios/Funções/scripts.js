@@ -179,7 +179,7 @@ function verificaFimPalavra(palavra, fimPalavra) {
   let inversoFimPalavra = fimPalavra.split('').reverse().join('');
   let result;
 
-  for (let index = 0; index < inversoFimPalavra.length; index += 1) {
+  for (let index in fimPalavra) {
     if (inversoPalavra[index] !== inversoFimPalavra[index]) {
       result = false;
       break;
