@@ -83,6 +83,23 @@
       secaozinhaDireita.className = 'right-content';
       container.appendChild(secaozinhaDireita);
 
+      const imagem = document.createElement('img');
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+      secaozinhaEsquerda.appendChild(imagem);
+
+      const listinha = document.createElement('ul');
+      secaozinhaDireita.appendChild(listinha);
+
+      let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove',' dez'];
+      for (let index in array){
+        let itensListinha = document.createElement('li');
+        itensListinha.innerHTML = array[index];
+        secaozinhaDireita.appendChild(itensListinha);
+      }
+
+      
+
 
 
     </script>
