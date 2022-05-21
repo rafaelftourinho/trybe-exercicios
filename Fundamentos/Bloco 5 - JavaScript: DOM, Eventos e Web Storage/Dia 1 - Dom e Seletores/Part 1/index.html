@@ -1,28 +1,40 @@
 <html>
   <body>
     <header>
-      <h2 id="page-title">Título</h2>
+      <h2 id="page-title"><strong>Título</strong></h2>
       <p id="paragraph" class="paragrafo">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
       <p id="second-paragraph" class="paragrafo">Segundo parágrafo!</p>
     </header>
     <script>
-      const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "red";
 
-      document.getElementById("page-title").innerText = "A Viagem de Chihiro";
+      let mudarTitulo = document.getElementById('page-title');
+      mudarTitulo.innerHTML = 'OUTRA COISA QUALQUER';
 
-      document.getElementById("second-paragraph").innerText = "Esse é um filme excelente para toda a família e para quem curte o maravilhoso Studio Gibhli."
+      let mudaCor = document.querySelector('p').style.background = 'pink';
+      let NewColor = document.querySelectorAll('.paragrafo')[0].style.border = '20px solid blue';
+      // let mudarCor = document.getElementsByClassName('paragrafo')[0].style.color = 'blue';
 
-      document.getElementById("subtitle").innerText = "Breves palavras"
+      let mudaSubtitulo = document.getElementsByTagName('h4')[0].innerText = 'Subtítulo qualquer';
       
-      let valoresParagrafo = document.getElementsByClassName("paragrafo");
 
-      valoresParagrafo = document.getElementsByClassName("paragrafo")[0].style.color = 'blue'; 
 
-      let valoresSubtitle = document.getElementsByTagName('h4')[0].innerText= 'Subtítulo';
+      // const paragraph = document.getElementById("paragraph");
+      // paragraph.style.color = "red";
 
-      valoresSubtitle = document.getElementsByTagName('h4')[0].style.border = "2px solid black";
+      // document.getElementById("page-title").innerText = "A Viagem de Chihiro";
+
+      // document.getElementById("second-paragraph").innerText = "Esse é um filme excelente para toda a família e para quem curte o maravilhoso Studio Gibhli."
+
+      // document.getElementById("subtitle").innerText = "Breves palavras"
+      
+      // let valoresParagrafo = document.getElementsByClassName("paragrafo");
+
+      // valoresParagrafo = document.getElementsByClassName("paragrafo")[0].style.color = 'blue'; 
+
+      // let valoresSubtitle = document.getElementsByTagName('h4')[0].innerText= 'Subtítulo';
+
+      // valoresSubtitle = document.getElementsByTagName('h4')[0].style.border = "2px solid black";
 
     </script>
   </body>
