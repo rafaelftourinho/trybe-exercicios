@@ -55,43 +55,87 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-      const textoEmP = () => {
-        let comoMeVejo = document.getElementsByTagName('p')[0].innerText = "Eu me vejo tendo muito sucesso como desenvolvedor ou qualquer outra carreira que eu queria seguir";
-      }
+      // function comoQueroMeVer() {
+      //   let meVendo = document.getElementsByTagName('p')[1].innerText = 'EMPREGADO!!!!'
+      // }
+      // comoQueroMeVer();
 
-      const amareloParaVerde = () => {
-        let mainContent = document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
-      }
 
-      const vermelhoParaBranco = () => {
-        let mudaCor = document.getElementsByTagName('section')[0].style.backgroundColor = 'white';
-      }
+      function comoQueroMeVer (text) {
+        document.getElementsByTagName('p')[1].innerText = text;
+      } 
 
-      const mudarTexto = () => {
-        let trocaTexto = document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
-      }
+      comoQueroMeVer('EMPREGADO!!!');
 
-      const paraMaiusculo = () => {
-        let vamoMudar = document.getElementsByTagName('p');
-        for (let i in vamoMudar){
-          vamoMudar[i].innerHTML = vamoMudar[i].innerHTML.toUpperCase(); 
+      // function amareloParaVerde() {
+      //   let amareloPVerde = document.querySelector('main').style.backgroundColor = 'rgb(76,164,109)';
+      // }
+
+      //   amareloParaVerde();
+
+        function quadradoAmarelo (backgroundColor) {
+          let amareloPVerde = document.querySelector('main').style.background = backgroundColor;
         }
-      }
 
-      const tudoDasP = () => {
-        let tudoP = document.getElementsByTagName('p');
-        for (let index in tudoP){
-          console.log(tudoP[index].innerHTML);
+        quadradoAmarelo('rgb(76,164,109)');
+
+        function redToWhite(amanda) {
+          let vermelhoParaBranco = document.getElementsByClassName('center-content')[0].style.background = amanda;
         }
-      }
 
-      textoEmP();
-      amareloParaVerde();
-      vermelhoParaBranco();
-      mudarTexto();
-      paraMaiusculo();
-      tudoDasP();
+        redToWhite('white');
 
+        // let vermelhoParaBranco = document.getElementsByClassName('center-content');
+
+      // const textoEmP = (text) =>  (document.getElementsByTagName('p')[0].innerText) = text;
+
+      // const amareloParaVerde = (backgroundColor) => (document.getElementsByClassName('main-content')[0].style.backgroundColor) = 'rgb(76,164,109)';
+
+      // const amareloParaVerde = (backgroundColor) => (document.getElementsByClassName('main-content')[0].style.backgroundColor) = backgroundColor;
+
+
+      // const vermelhoParaBranco = (backgroundColor) => {
+      // (document.getElementsByTagName('section')[0].style.backgroundColor) = backgroundColor;
+      // }
+
+      // const mudarTexto = (text) => {
+      //   let trocaTexto = document.getElementsByTagName('h1')[0].innerText = text;
+      // }
+
+      // const paraMaiusculo = () => {
+      //   let vamoMudar = document.getElementsByTagName('p');
+      //   for (let i in vamoMudar){
+      //     vamoMudar[i].innerHTML = vamoMudar[i].innerHTML.toUpperCase(); 
+      //   }
+      // }
+
+        // const paraMaiusculo = () => {
+        //   let vamoMudar = document.getElementsByTagName('p');
+        //   for (let i in vamoMudar){
+        //     vamoMudar[i].style.textTransform = 'uppercase';
+        //   }
+        // }
+
+      //   const paraMaiusculo = () => {
+      //     let vamoMudar = document.getElementsByTagName('p');
+      //     for (let index of vamoMudar){
+      //       index.style.textTransform = 'uppercase';
+      //     }
+      //   }
+
+      // const tudoDasP = () => {
+      //   let tudoP = document.getElementsByTagName('p');
+      //   for (let index in tudoP){
+      //     console.log(tudoP[index].innerHTML);
+      //   }
+      // }
+
+      // textoEmP("Eu me vejo tendo muito sucesso como desenvolvedor ou qualquer outra carreira que eu queria seguir");
+      // amareloParaVerde();
+      // vermelhoParaBranco('white');
+      // mudarTexto('Exercício 5.1 - JavaScript');
+      // paraMaiusculo();
+      // tudoDasP();
 
     </script>
   </body>

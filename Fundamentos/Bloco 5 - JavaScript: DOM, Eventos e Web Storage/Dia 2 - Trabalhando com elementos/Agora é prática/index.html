@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+      const meuCorpo = document.body;
+      const titulo = document.createElement('h1');
+      titulo.className = 'title';
+      titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+      meuCorpo.appendChild(titulo);
+
+      const container = document.createElement('main');
+      container.className = 'main-content';
+      meuCorpo.appendChild(container);
+
+      const secaozinha = document.createElement('section');
+      secaozinha.className = 'center-content';
+      container.appendChild(secaozinha);
+
+      const adicionaOP = document.createElement('p');
+      secaozinha.appendChild(adicionaOP);
+      adicionaOP.innerText = 'ADICIONA UM TEXTO';
+
+      const secaozinhaEsquerda = document.createElement('section');
+      secaozinhaEsquerda.className = 'left-content';
+      container.appendChild(secaozinhaEsquerda);
+
+      const secaozinhaDireita = document.createElement('section');
+      secaozinhaDireita.className = 'right-content';
+      container.appendChild(secaozinhaDireita);
+
+      const imagem = document.createElement('img');
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+      secaozinhaEsquerda.appendChild(imagem);
+
+      const listinha = document.createElement('ul');
+      secaozinhaDireita.appendChild(listinha);
+
+      let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove',' dez'];
+      for (let index in array){
+        let itensListinha = document.createElement('li');
+        itensListinha.innerHTML = array[index];
+        secaozinhaDireita.appendChild(itensListinha);
+      }
+      for (let index = 1; index <= 3; index += 1){
+        let subtitle = document.createElement('h3');
+        subtitle.className = 'description';
+        subtitle.innerText = 'qualquer coisa aqui';
+        container.appendChild(subtitle);
+      }
+      
+      container.removeChild(secaozinhaEsquerda);
+
+      secaozinhaDireita.style.marginRight = 'auto';
+
+      
+      
+
+
+
+
+    </script>
+  </body>
+</html>
