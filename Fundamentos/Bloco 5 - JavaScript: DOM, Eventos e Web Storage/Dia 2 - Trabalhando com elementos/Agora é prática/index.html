@@ -60,6 +60,7 @@
     <script>
       const meuCorpo = document.body;
       const titulo = document.createElement('h1');
+      titulo.className = 'title';
       titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
       meuCorpo.appendChild(titulo);
 
@@ -97,8 +98,14 @@
         itensListinha.innerHTML = array[index];
         secaozinhaDireita.appendChild(itensListinha);
       }
-
+      for (let index = 1; index <= 3; index += 1){
+        let subtitle = document.createElement('h3');
+        subtitle.className = 'description';
+        subtitle.innerText = 'qualquer coisa aqui';
+        container.appendChild(subtitle);
+      }
       
+
 
 
 
