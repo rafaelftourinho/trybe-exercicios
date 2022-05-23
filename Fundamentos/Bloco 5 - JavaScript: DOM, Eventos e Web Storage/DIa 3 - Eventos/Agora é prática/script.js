@@ -55,30 +55,62 @@ btnHolidays('Feriados');
 
 const btn = document.querySelector('#btn-holiday');
 const itemsHoliday = document.querySelectorAll('.holiday');
-const branco = 'white';
-const corOriginal = 'rgb(238,238,238)';
+// const branco = 'white';
+// const corOriginal = 'rgb(238,238,238)';
 
 
-const changeHolidayColor = () => {
+const changeHolidayColor = (white, originalColor) => {
   btn.addEventListener('click', function(){
     for (let index in holiday){
-      if (itemsHoliday[index].style.backgroundColor === branco){
-        itemsHoliday[index].style.backgroundColor = corOriginal;
+      if (itemsHoliday[index].style.backgroundColor === white){
+        itemsHoliday[index].style.backgroundColor = originalColor;
       } else {
-        itemsHoliday[index].style.backgroundColor = branco;
+        itemsHoliday[index].style.backgroundColor = white;
       }
     }
   })
 }
 
-changeHolidayColor();
+changeHolidayColor('white', 'rgb(238,238,238)');
 
 const fridayBitch = (sextaFeira) => {
   let sexotafeira = document.createElement('button');
-  sexotafeira.className = 'btn-friday';
-  sexotafeira.innerHTML = sextaFeira;
+  sexotafeira.id = 'btn-friday';
+  sexotafeira.innerText = sextaFeira;
   div.appendChild(sexotafeira);
 }
 
 fridayBitch('Sexta-feira');
 
+
+const btnFriday = document.querySelector('#btn-friday');
+const itemsFriday = document.querySelectorAll('.friday');
+// const sextou = 'Sexta-feira';
+
+
+// const changeFridayText = (sextou) => {
+//   btnFriday.addEventListener('click', function(){
+//     for (index in friday) {
+//       if (itemsFriday[index].innerText === sextou) {
+//         itemsFriday[index].innerHTML = friday[index];
+//       } else {
+//         itemsFriday[index].innerText = sextou;
+//       }
+//     }
+//   })
+// }
+
+// changeFridayText('Sexta-feira');
+
+const changeFridayText = () => {
+  for (index in friday){
+    if (itemsFriday[index].innerHTML === 'SEXTOU!!!'){
+      itemsFriday[index].innerHTML = friday[index];
+    } else {
+      itemsFriday[index].innerHTML = 'SEXTOU!!!';
+    }
+  }
+}
+
+changeFridayText();
+btnFriday.addEventListener('click', changeFridayText);
