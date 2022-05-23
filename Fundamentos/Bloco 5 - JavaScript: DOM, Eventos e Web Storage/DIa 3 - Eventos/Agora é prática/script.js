@@ -53,5 +53,25 @@ const btnHolidays = (feriados) => {
 
 btnHolidays('Feriados');
 
+const btn = document.querySelector('#btn-holiday');
+const itemsHoliday = document.querySelectorAll('.holiday');
+const branco = 'white';
+const corOriginal = 'rgb(238,238,238)';
+
+
+const changeHolidayColor = () => {
+  btn.addEventListener('click', function(){
+    for (let index in holiday){
+      if (itemsHoliday[index].style.backgroundColor === branco){
+        itemsHoliday[index].style.backgroundColor = corOriginal;
+      } else {
+        itemsHoliday[index].style.backgroundColor = branco;
+      }
+    }
+  })
+}
+
+changeHolidayColor();
+
 
 
