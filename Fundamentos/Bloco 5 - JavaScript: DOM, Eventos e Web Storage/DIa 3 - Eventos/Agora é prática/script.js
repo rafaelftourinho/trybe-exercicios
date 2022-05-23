@@ -73,5 +73,12 @@ const changeHolidayColor = () => {
 
 changeHolidayColor();
 
+const fridayBitch = (sextaFeira) => {
+  let sexotafeira = document.createElement('button');
+  sexotafeira.className = 'btn-friday';
+  sexotafeira.innerHTML = sextaFeira;
+  div.appendChild(sexotafeira);
+}
 
+fridayBitch('Sexta-feira');
 
