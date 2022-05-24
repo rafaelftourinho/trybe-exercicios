@@ -55,17 +55,61 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
+        // function comoQueroMeVer() {
+        //   let meVendo = document.querySelectorAll('p')[1].innerText = 'RYCO!';
+        // }
+
+          const comoQueroMeVer = (texto) => {
+            let meVendo = document.querySelectorAll('p')[1].innerText = texto;
+          }
+          comoQueroMeVer('EMPREGADO');
+
+          const amareloParaVerde = (backgroundColor) => {
+            let mudarCor = document.querySelector('main').style.backgroundColor = backgroundColor;
+          }
+
+          amareloParaVerde('rgb(76,164,109)');
+
+          const todoP = () => {
+            let maisculoP = document.querySelectorAll('p');
+            for (let index in maisculoP) {
+              maisculoP[index].innerText = maisculoP[index].innerHTML.toUpperCase();
+            }
+          }
+
+          todoP();
+          
+          // comoQueroMeVer('EMPREGADO!');
+          // comoQueroMeVer('RICO');
+      // function comoQueroMeVer() {
+      //   let meVendo = document.getElementsByTagName('p')[1].innerText = 'RICO!!!!';
+      // }
+
+      // const comoQueroMeVer = (text) => {
+      //   let meVendo = document.getElementsByTagName('p')[1].innerText = text;
+      // }
+
+      // comoQueroMeVer('EMPREGADO');
+
+      // const amareloParaVerde = (backgroundColor) => {
+      //   let mudaCor = document.getElementsByTagName('main')[0].style.backgroundColor = backgroundColor;
+      // }
+
+      // amareloParaVerde('rgb(76,164,109)');
+
+
+
       // function comoQueroMeVer() {
       //   let meVendo = document.getElementsByTagName('p')[1].innerText = 'EMPREGADO!!!!'
       // }
       // comoQueroMeVer();
 
 
-      function comoQueroMeVer (text) {
-        document.getElementsByTagName('p')[1].innerText = text;
-      } 
+      // function comoQueroMeVer (text) {
+      //   document.getElementsByTagName('p')[1].innerText = text;
+      // } 
 
-      comoQueroMeVer('EMPREGADO!!!');
+      // comoQueroMeVer('EMPREGADO!!!');
 
       // function amareloParaVerde() {
       //   let amareloPVerde = document.querySelector('main').style.backgroundColor = 'rgb(76,164,109)';
@@ -73,17 +117,17 @@
 
       //   amareloParaVerde();
 
-        function quadradoAmarelo (backgroundColor) {
-          let amareloPVerde = document.querySelector('main').style.background = backgroundColor;
-        }
+        // function quadradoAmarelo (backgroundColor) {
+        //   let amareloPVerde = document.querySelector('main').style.background = backgroundColor;
+        // }
 
-        quadradoAmarelo('rgb(76,164,109)');
+        // quadradoAmarelo('rgb(76,164,109)');
 
-        function redToWhite(amanda) {
-          let vermelhoParaBranco = document.getElementsByClassName('center-content')[0].style.background = amanda;
-        }
+        // function redToWhite(amanda) {
+        //   let vermelhoParaBranco = document.getElementsByClassName('center-content')[0].style.background = amanda;
+        // }
 
-        redToWhite('white');
+        // redToWhite('white');
 
         // let vermelhoParaBranco = document.getElementsByClassName('center-content');
 
