@@ -27,7 +27,7 @@ header {
 }
 
 .form-container {
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 input[type='text'] , textarea , input[type='date'] {
@@ -42,13 +42,13 @@ input[type='text'] , textarea , input[type='date'] {
 }
 
 textarea {
-  width: 89.7%;
+  width: 84.5%;
   resize: none;
   margin-top: 10px;
 }
 
 input[type='date'] {
-  width: 81.5%;
+  width: 80.7%;
 }
 
 .btn-container {
