@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Formulário</legend>
+    <form action="" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="country" value="BR">
+      <label for="text">Nome:</label>
+      <input type="text" name="text" id="input-text" required title="texto@domínio.algumacoisa" placeholder="Digite seu email" minlength="2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" autofocus>
+      <br> <br>
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="input-password" required placeholder="Digite sua senha">
+      <br> <br>
+      <label for="input-check"><input type="checkbox" name="check" id="input-check"> Lembre-me</label>
+      <br> <br>
+      <button type="submit" id="btn-submit">Entrar</button>
+    </form>
+  </fieldset>
+  
+</body>
+</html>
