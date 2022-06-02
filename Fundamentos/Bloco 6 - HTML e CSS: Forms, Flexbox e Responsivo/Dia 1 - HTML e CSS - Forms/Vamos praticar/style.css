@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -59,4 +59,17 @@ input[type='date'] {
 .btn {
   padding: 10px;
   border-radius: 4px;
+} */
+
+textarea {
+  resize: none;
 }
+
+main {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  margin: 10px;
+}
+
