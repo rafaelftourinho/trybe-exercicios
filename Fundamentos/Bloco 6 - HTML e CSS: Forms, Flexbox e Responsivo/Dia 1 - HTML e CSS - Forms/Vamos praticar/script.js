@@ -1,6 +1,14 @@
 const BTN_SUBMIT = document.querySelector('#btn-submit');
-const ancora = document.querySelector('a');
+const agree = document.querySelector('#agree');
 
-BTN_SUBMIT.addEventListener('click', (e) => {
-  e.preventDefault();
-})
+const ENABLE_SUBMIT = () => {
+  BTN_SUBMIT.disabled = !agree.checked;
+}
+window.onload = () => {
+  BTN_SUBMIT.addEventListener('click', (e) => {
+    e.preventDefault();
+  })
+  agree.addEventListener('change', ENABLE_SUBMIT);
+}
+
+
