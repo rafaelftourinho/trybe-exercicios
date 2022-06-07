@@ -67,8 +67,8 @@ p strong {
 }
 
 @media screen and (min-width: 501px) {
-  section > div {
-    display: block;
+  .cards , .card {
+    display: flex;
   }
   .trick {
     display: none;
@@ -76,7 +76,7 @@ p strong {
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
-  section:nth-child(1) {
+  section:nth-child(1) , .cards {
     display: block;
   }
 }
@@ -89,6 +89,6 @@ p strong {
 
 @media (max-width: 500px) {
   p.trick {
-    display: contents;
+    display: flex;
   }
 }
