@@ -2,9 +2,9 @@
 
 const newEmployees = (callback) => {
   const employees = {
-    id1: callback('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    id2: callback('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    id3: callback('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+    id1: callback('Pedro Guerra'), 
+    id2: callback('Luiza Drumond'), 
+    id3: callback('Carla Paiva'), 
   }
   return employees;
 };
@@ -33,17 +33,25 @@ console.log(raffle(2, checker));
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-const verificacaoNota = (corretas, verificadas, funcChecker) => {
-  let contador = 0;
-  for (let item in corretas) {
-    contador += funcChecker(corretas[item], verificadas[item]);
-  }
-  return `Resultado final : ${contador} pontos`;
+// const verificacaoNota = (gabarito, resposta, callback) => {
+//   let contador = 0;
+//   for (let item in gabarito) {
+//     const num = callback(gabarito[item], resposta[item]);
+//     contador += num;
+//     console.log('conferência',num);
+//     console.log('contador',contador);
+//   }
+//   return `Resultado final : ${contador} pontos`;
+// }
+
+const verificacaoNota = (gabarito, resposta, callback) => {
+  const result = gabarito.reduce((acc,_,i) => acc + callback(gabarito[i], resposta[i]) ,0);
+  return `Resultado final : ${result} pontos`;
 }
 
-const comparacaoNumeros = (corretas, verificadas) => {
-  if (corretas === verificadas) return 1;
-  if (verificadas === 'N.A') {
+const comparacaoNumeros = (gabarito, resposta) => {
+  if (gabarito === resposta) return 1;
+  if (resposta === 'N.A') {
     return 0;
   } return -0.5;
 }

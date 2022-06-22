@@ -16,8 +16,8 @@ const isOdd = (number) => {
   }
 };
 
-repeat(3, isEven); // Testa quais números serão pares;
-repeat(3, isOdd); // Testa quais números serão ímpares;
+repeat(10, isEven); // Testa quais números serão pares;
+repeat(5, isOdd); // Testa quais números serão ímpares;
 
 //VÍDEO 
 
@@ -35,3 +35,5 @@ console.log(calculator(sum));
 console.log(calculator(sub));
 console.log(calculator(multi));
 console.log(calculator(div));
+
+

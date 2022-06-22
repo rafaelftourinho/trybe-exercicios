@@ -14,10 +14,7 @@ const breakfest = () => 'Bora tomar café!!';
 
 const sleeping = () => 'Partiu dormir!!';
 
-const doingThings = (func) => {
-  const result = func();
-  console.log(result);
-}
+const doingThings = (func) => console.log(func());
 
 doingThings(awakening);
 doingThings(breakfest);
