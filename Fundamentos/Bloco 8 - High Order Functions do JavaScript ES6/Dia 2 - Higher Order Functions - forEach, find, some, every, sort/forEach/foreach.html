@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #btn-filter {
+  color: white;
+  background-color: green;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+  </style>
+</head>
+<body>
+  
+<p>Para cada e-mail do array emailList, a função callback é executada.</p>
+<button id="btn-filter">ForEach</button>
+<div id="email-list"></div>
+
+  <script>
+    // Array contendo a lista de emails.
+const emailList = [
+  "isa@myemail.com",
+  "lipe@myemail.com",
+  "digo@myemail.com",
+  "greg@myemail.com"
+];
+
+// Função callback que recebe o array emailList como parâmetro.
+const showEmailList = (list) => {
+  const div = document.querySelector("#email-list");
+  div.innerHTML = '';
+// Para cada e-mail da lista, a função cria uma tag <p> com a frase '${email}: Enviado com sucesso'
+  list.forEach((email) => {
+    const p = document.createElement("p");
+    p.innerHTML = `${email} : Enviado com sucesso!`;
+    div.appendChild(p);
+  });
+}
+
+const btnFilter = document.querySelector("#btn-filter");
+btnFilter.addEventListener("click", () => showEmailList(emailList));
+
+  </script>
+</body>
+</html>
