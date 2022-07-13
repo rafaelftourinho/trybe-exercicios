@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _[Projeto - Lessons Learned](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/lessons_learned)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/playground_functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Meme Generator]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [X] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-5: _[Projeto - Meme Generator](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/meme_generator)_
+- [X] 5-6: _[Projeto - Pixel Art](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/pixels_art)_
+- [X] 5-7: _[Projeto - To do List](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/to_do_list)_
+- [X] 5-7: _[Projeto - Color Guess](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/color_guess)_
+- [X] 5-7: _[Projeto - Mistery Letter](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/mistery_letter)_
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -54,32 +54,32 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [X] 6-6: _[Projeto - TrybeWarts](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/trybewarts)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/unit_tests)_
 
 ##### Bloco 8: JavaScript ES6
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-5: _[Projeto - Zoo functions](https://github.com/rafaelftourinho/trybe-projetos/tree/main/fundamentos/zoo_functions)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Promises_
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/rafaelftourinho/trybe-projetos/tree/main/frontend/shopping_cart)_
 
 ##### Bloco 10: Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
+- [x] 10-1: _Primeiros passos no Jest_
 - [ ] 10-2: _Jest - Testes Assíncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
 - [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
