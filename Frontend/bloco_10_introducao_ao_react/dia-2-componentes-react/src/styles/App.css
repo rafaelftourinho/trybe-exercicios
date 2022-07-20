@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  background-color: rgb(185, 34, 44);
+  color: white;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.pokedex {
+  padding: 40px 0;
+}
